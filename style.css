@@ -7,97 +7,6 @@
 -------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700');
-<style>
-/* Timeline container */
-.timeline {
-    position: relative;
-    margin: 50px 0;
-    padding: 0;
-    list-style: none;
-}
-
-/* Timeline items */
-.timeline-item {
-    margin-bottom: 30px;
-    position: relative;
-    padding-left: 40px;
-}
-
-/* Timeline icon */
-.timeline-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    background: #f7f7f7;
-    border: 2px solid #007bff;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 30px;
-    font-size: 16px;
-    color: #007bff;
-}
-
-/* Timeline content */
-.timeline-content {
-    background: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.timeline-content h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.timeline-content h5 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #555;
-}
-
-.timeline-content p {
-    margin: 0;
-    font-size: 14px;
-    color: #666;
-}
-
-/* Hover effects */
-.timeline-item:hover .timeline-icon {
-    background: #007bff;
-    color: #fff;
-}
-.timeline-item:hover .timeline-content {
-    transform: scale(1.02);
-    transition: 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-</style>
-
-.work-box {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.work-box h4 {
-    font-size: 18px;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.work-box h5 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #777;
-}
 
 /*------------------------------------------------------------------
     IMPORT FILES
@@ -2598,4 +2507,70 @@ select.mobile-device {
     border-color: rgba(255, 255, 255, 0.6);
     color: rgba(255, 255, 255, 0.6);
 }
+.timeline {
+    position: relative;
+    margin: 50px 0;
+    padding: 0;
+    list-style: none;
+}
 
+/* Timeline items */
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 40px;
+}
+
+/* Timeline icon */
+.timeline-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: #f7f7f7;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #007bff;
+}
+
+/* Timeline content */
+.timeline-content {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.timeline-content h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.timeline-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Hover effects */
+.timeline-item:hover .timeline-icon {
+    background: #007bff;
+    color: #fff;
+}
+.timeline-item:hover .timeline-content {
+    transform: scale(1.02);
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
