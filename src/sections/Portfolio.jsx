@@ -24,6 +24,8 @@ const projectsData = [
     { id: 16, title: 'Animation 1', category: '3D Modeling & Animation', src: '/uploads/0001-0300.mp4', type: 'video', link: '/uploads/0001-0300.mp4' },
     { id: 17, title: 'Animation 2', category: '3D Modeling & Animation', src: '/uploads/v1.mp4', type: 'video', link: '/uploads/v1.mp4' },
     { id: 18, title: 'Animation 3', category: '3D Modeling & Animation', src: '/uploads/v2.mp4', type: 'video', link: '/uploads/v2.mp4' },
+    { id: 19, title: 'Waikkala', category: 'Web Development', src: '/uploads/waikkala.mp4', type: 'video', link: 'https://github.com/Waikkala/wgm-frontend' },
+    { id: 20, title: 'YouTube Demo', category: 'Other', type: 'youtube', videoId: 'TEhs5ZkCKZU', link: 'https://www.youtube.com/watch?v=TEhs5ZkCKZU' },
 ];
 
 const Portfolio = () => {
@@ -67,7 +69,14 @@ const Portfolio = () => {
                                 {project.type === 'video' ? (
                                     <div className="w-full h-full relative">
                                         <video className="w-full h-full object-cover" src={project.src} muted loop />
-                                        <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                                        <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-colors">
+                                            <Play className="text-white w-12 h-12 opacity-80" />
+                                        </div>
+                                    </div>
+                                ) : project.type === 'youtube' ? (
+                                    <div className="w-full h-full relative">
+                                        <img src={`https://img.youtube.com/vi/${project.videoId}/maxresdefault.jpg`} onError={(e) => e.target.src = `https://img.youtube.com/vi/${project.videoId}/hqdefault.jpg`} alt={project.title} className="w-full h-full object-cover" loading="lazy" />
+                                        <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-colors">
                                             <Play className="text-white w-12 h-12 opacity-80" />
                                         </div>
                                     </div>
@@ -112,6 +121,14 @@ const Portfolio = () => {
                                 <div className="w-full aspect-video bg-gray-100 dark:bg-gray-950 flex items-center justify-center">
                                     {selectedProject.type === 'video' ? (
                                         <video src={selectedProject.src} controls autoPlay className="w-full h-full object-contain" />
+                                    ) : selectedProject.type === 'youtube' ? (
+                                        <iframe
+                                            src={`https://www.youtube.com/embed/${selectedProject.videoId}?autoplay=1`}
+                                            title={selectedProject.title}
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowFullScreen
+                                            className="w-full h-full border-0"
+                                        />
                                     ) : (
                                         <img src={selectedProject.src} alt={selectedProject.title} className="w-full h-full object-contain" />
                                     )}
