@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import SectionHeader from '../components/SectionHeader';
-import { Globe, PenTool, Layout, Database, Kanban, TestTube } from 'lucide-react';
+import { Globe, PenTool, Layout, Database, Kanban, TestTube, Cpu, Cloud } from 'lucide-react';
 
 const skillsData = [
     {
@@ -39,6 +39,18 @@ const skillsData = [
         desc: 'Proficient in Postman, RestAssured, Serenity-BDD, Selenium, Cucumber for automated testing and API validation.',
         icon: <TestTube size={40} className="text-indigo-500" />,
         color: 'from-indigo-500/20 to-blue-500/20'
+    },
+    {
+        title: 'AI and R&D',
+        desc: 'Familiar with Python, RAG, Pipecat, Neo4j Graph Database, MCP, MCP UI, and Grafana for building intelligent systems and dashboards.',
+        icon: <Cpu size={40} className="text-teal-500" />,
+        color: 'from-teal-500/20 to-emerald-500/20'
+    },
+    {
+        title: 'DevOps & Cloud',
+        desc: 'Experienced with Docker, Kubernetes (K8s), Jenkins, Harbor, and AWS services (e.g., S3) for CI/CD and cloud infrastructure.',
+        icon: <Cloud size={40} className="text-sky-500" />,
+        color: 'from-sky-500/20 to-cyan-500/20'
     }
 ];
 

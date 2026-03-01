@@ -5,6 +5,13 @@ import { Briefcase, Code } from 'lucide-react';
 
 const expData = [
     {
+        role: 'Associate Software Engineer',
+        company: 'Cloud Solutions International',
+        duration: 'July 2025 - Present',
+        description: 'Engaged in software development within the healthcare sector, building secure and scalable applications. Involved in AI-related developments, integrating intelligent workflows to enhance modern healthcare solutions.',
+        icon: <Code size={28} />
+    },
+    {
         role: 'Software Engineer Intern',
         company: 'Circles Life, Sri Lanka',
         duration: 'January 2024 - July 2024',
@@ -13,8 +20,8 @@ const expData = [
     },
     {
         role: 'Web Developer & Web Designer',
-        company: 'Freelance Projects / Fiverr',
-        duration: 'Oct 2023 - Jan 2025',
+        company: 'Freelance Projects / Fiverr / Upwork',
+        duration: 'Oct 2023 - Present',
         description: 'Developed responsive websites and designed UI/UX designs, focusing on user-centered design functionality, and seamless front-end and back-end integration. Tech Stack: React, Spring boot, MySQL, Figma.',
         icon: <Code size={28} />
     }
