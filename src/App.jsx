@@ -20,8 +20,8 @@ function App() {
             <main>
                 <Hero />
                 <About />
-                <Education />
                 <Experience />
+                <Education />
                 <Skills />
                 <Portfolio />
                 <Blogs />
