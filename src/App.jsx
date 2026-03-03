@@ -9,6 +9,7 @@ import Skills from './sections/Skills';
 import Portfolio from './sections/Portfolio';
 import Blogs from './sections/Blogs';
 import Contact from './sections/Contact';
+import Support from './sections/Support';
 import ScrollProgress from './components/ScrollProgress';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
                 <Portfolio />
                 <Blogs />
                 <Contact />
+                <Support />
             </main>
 
             <Footer />
