@@ -6,12 +6,13 @@ import { useTheme } from '../contexts/ThemeContext';
 const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
-    { name: 'Education', href: '#education' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Education', href: '#education' },
     { name: 'Skills', href: '#skills' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Blogs', href: '#blogs' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Contact', href: '#contact' },
+    { name: 'Support', href: '#support' }
 ];
 
 const Navbar = () => {
