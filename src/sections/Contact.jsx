@@ -14,15 +14,29 @@ const Contact = () => {
         setIsSubmitting(true);
         setSubmitStatus(null);
 
-        // Simulate EmailJS or actual connection if provided API keys
-        // emailjs.sendForm('SERVICE_ID', 'TEMPLATE_ID', e.target, 'PUBLIC_KEY')
+        const templateParams = {
+            from_name: formData.name,
+            from_email: formData.email,
+            phone: formData.phone,
+            message: formData.message,
+        };
 
-        setTimeout(() => {
+        try {
+            await emailjs.send(
+                'service_0t3ae0p',
+                'template_qpcjhvo',
+                templateParams,
+                '6Ndrh18z39wQGfH17'
+            );
             setSubmitStatus('success');
-            setIsSubmitting(false);
             setFormData({ name: '', email: '', phone: '', message: '' });
             setTimeout(() => setSubmitStatus(null), 5000);
-        }, 1500);
+        } catch (error) {
+            console.error('EmailJS error:', error);
+            setSubmitStatus('error');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const handleChange = (e) => {
@@ -168,6 +182,15 @@ const Contact = () => {
                                         className="p-4 bg-green-100 text-green-700 rounded-xl text-center font-medium"
                                     >
                                         Thank you! Your message has been sent successfully.
+                                    </motion.div>
+                                )}
+                                {submitStatus === 'error' && (
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        className="p-4 bg-red-100 text-red-700 rounded-xl text-center font-medium"
+                                    >
+                                        Oops! Something went wrong. Please try again or email me directly.
                                     </motion.div>
                                 )}
                             </form>
