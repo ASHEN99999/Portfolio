@@ -19,12 +19,14 @@ const About = () => {
                     >
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-2xl transform rotate-3 scale-105 opacity-50 blur-lg dark:opacity-30"></div>
-                            <img
-                                src="/uploads/Ashen.jpeg"
-                                alt="Ashen Lakshitha"
-                                className="relative z-10 rounded-2xl shadow-xl w-full h-auto lg:max-h-[500px] object-cover object-top"
-                                loading="lazy"
-                            />
+                            <div className="relative z-10 rounded-2xl shadow-xl overflow-hidden w-full h-[480px] lg:h-[520px]">
+                                <img
+                                    src="/uploads/Ashen.jpeg"
+                                    alt="Ashen Lakshitha"
+                                    className="w-full h-full object-cover object-top scale-[1.03] origin-top"
+                                    loading="lazy"
+                                />
+                            </div>
                         </div>
                     </motion.div>
 
@@ -47,9 +49,10 @@ const About = () => {
 
                         <div className="pt-4">
                             <a
-                                href="#"
+                                href="/uploads/Ashen_Lakshitha_FlowCV_Resume_2026-06-20.pdf.pdf"
                                 target="_blank"
                                 rel="noreferrer"
+                                download="Ashen_Lakshitha_CV.pdf"
                                 className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-full hover:shadow-lg hover:shadow-primary/30 transition-all hover:-translate-y-1"
                             >
                                 <Download size={20} />
