@@ -20,8 +20,8 @@ const About = () => {
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-2xl transform rotate-3 scale-105 opacity-50 blur-lg dark:opacity-30"></div>
                             <img
-                                src="/uploads/about_04.jpeg"
-                                alt="Amal Shalinda"
+                                src="/uploads/Ashen.jpeg"
+                                alt="Ashen Lakshitha"
                                 className="relative z-10 rounded-2xl shadow-xl w-full h-auto lg:max-h-[500px] object-cover object-top"
                                 loading="lazy"
                             />
@@ -36,18 +36,18 @@ const About = () => {
                         className="md:w-1/2 space-y-6"
                     >
                         <h3 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-                            Hello, I am Amal Shalinda
+                            Hello, I am Ashen Lakshitha
                         </h3>
                         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                            I am a responsible and motivated person who loves learning new things. I work well with others and enjoy solving problems using both logical and creative thinking. My studies have taught me a lot about IT and how important teamwork and communication are in getting things done.
+                            Final-year B.Sc (Hons) Information Technology undergraduate at SLIIT with hands-on experience in software development and web application development. Skilled in Angular, TypeScript, Java, Spring Boot, MERN Stack, SQL, Git, and RESTful APIs.
                         </p>
                         <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                            In my free time, I like to travel, play cricket, and watch movies. These activities help me relax and stay inspired. I am excited to keep learning and use my skills to make a positive impact in the IT world.
+                            Strong interest in full-stack development and building scalable, user-focused applications. Seeking an Associate Software Engineer opportunity to contribute technical skills while growing as a software engineering professional.
                         </p>
 
                         <div className="pt-4">
                             <a
-                                href="https://drive.google.com/file/d/1owRhsYh3P_Naag6qD5auOw9WnUHNv2Bs/view?usp=sharing"
+                                href="#"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-full hover:shadow-lg hover:shadow-primary/30 transition-all hover:-translate-y-1"

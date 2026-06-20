@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
 import ParticleBackground from '../components/ParticleBackground';
 
-const ROLES = ["Web Developer", "UI/UX Designer", "Full-Stack Developer", "AI Enthusiast", "Creative Problem Solver"];
+const ROLES = ["Software Engineer", "Full-Stack Developer", "DevOps Enthusiast", "Java Developer", "Creative Problem Solver"];
 
 const Hero = () => {
     const [roleIndex, setRoleIndex] = useState(0);
@@ -36,7 +36,7 @@ const Hero = () => {
                     transition={{ duration: 0.5, delay: 0.1 }}
                     className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-6"
                 >
-                    Amal <span className="text-gradient">Shalinda</span>
+                    Ashen <span className="text-gradient">Lakshitha</span>
                 </motion.h1>
 
                 <motion.div
@@ -69,10 +69,10 @@ const Hero = () => {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     className="flex justify-center items-center space-x-6 mb-16"
                 >
-                    <a href="https://github.com/Shalinda99" target="_blank" rel="noreferrer" className="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all text-gray-700 dark:text-gray-300 hover:text-primary">
+                    <a href="https://github.com/ASHEN99999" target="_blank" rel="noreferrer" className="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all text-gray-700 dark:text-gray-300 hover:text-primary">
                         <Github size={24} />
                     </a>
-                    <a href="https://www.linkedin.com/in/amal-shalinda-188885231/" target="_blank" rel="noreferrer" className="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all text-gray-700 dark:text-gray-300 hover:text-primary">
+                    <a href="https://www.linkedin.com/in/ashen-lakshitha-9665822b1" target="_blank" rel="noreferrer" className="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all text-gray-700 dark:text-gray-300 hover:text-primary">
                         <Linkedin size={24} />
                     </a>
                     <a href="#contact" className="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all text-gray-700 dark:text-gray-300 hover:text-primary">

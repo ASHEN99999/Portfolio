@@ -9,10 +9,9 @@ const navLinks = [
     { name: 'Experience', href: '#experience' },
     { name: 'Education', href: '#education' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Blogs', href: '#blogs' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Certifications', href: '#certifications' },
     { name: 'Contact', href: '#contact' },
-    { name: 'Support', href: '#support' }
 ];
 
 const Navbar = () => {
@@ -33,7 +32,7 @@ const Navbar = () => {
             <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
                 {/* Logo */}
                 <a href="#home" className="text-2xl font-bold tracking-tighter hover:scale-105 transition-transform">
-                    <span className="text-gradient">Amal</span> Shalinda
+                    <span className="text-gradient">Ashen</span> Lakshitha
                 </a>
 
                 {/* Desktop Nav */}

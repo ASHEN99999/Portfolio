@@ -9,7 +9,7 @@ const Footer = () => {
 
                     <div className="text-center md:text-left">
                         <a href="#home" className="text-xl font-bold tracking-tighter block mb-2">
-                            <span className="text-gradient">Amal</span> Shalinda
+                            <span className="text-gradient">Ashen</span> Lakshitha
                         </a>
                         <p className="text-gray-500 dark:text-gray-400 text-sm">
                             All Rights Reserved. &copy; {new Date().getFullYear()}
@@ -17,10 +17,10 @@ const Footer = () => {
                     </div>
 
                     <div className="flex space-x-6">
-                        <a href="https://github.com/Shalinda99" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary transition-colors">
+                        <a href="https://github.com/ASHEN99999" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary transition-colors">
                             <Github size={24} />
                         </a>
-                        <a href="https://www.linkedin.com/in/amal-shalinda-188885231/" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary transition-colors">
+                        <a href="https://www.linkedin.com/in/ashen-lakshitha-9665822b1" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary transition-colors">
                             <Linkedin size={24} />
                         </a>
                     </div>
@@ -28,7 +28,7 @@ const Footer = () => {
                 </div>
 
                 <div className="mt-8 pt-8 border-t border-gray-100 dark:border-gray-900 flex justify-center items-center text-sm text-gray-500 dark:text-gray-400">
-                    Designed & Built with <Heart size={16} className="text-red-500 mx-1 animate-pulse" /> by Amal Shalinda
+                    Designed & Built with <Heart size={16} className="text-red-500 mx-1 animate-pulse" /> by Ashen Lakshitha
                 </div>
             </div>
         </footer>

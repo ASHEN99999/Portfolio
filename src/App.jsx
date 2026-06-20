@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Hero from './sections/Hero';
@@ -6,10 +6,9 @@ import About from './sections/About';
 import Education from './sections/Education';
 import Experience from './sections/Experience';
 import Skills from './sections/Skills';
-import Portfolio from './sections/Portfolio';
-import Blogs from './sections/Blogs';
+import Projects from './sections/Projects';
+import Certifications from './sections/Certifications';
 import Contact from './sections/Contact';
-import Support from './sections/Support';
 import ScrollProgress from './components/ScrollProgress';
 
 function App() {
@@ -24,10 +23,9 @@ function App() {
                 <Experience />
                 <Education />
                 <Skills />
-                <Portfolio />
-                <Blogs />
+                <Projects />
+                <Certifications />
                 <Contact />
-                <Support />
             </main>
 
             <Footer />

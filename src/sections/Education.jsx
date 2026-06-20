@@ -5,17 +5,17 @@ import { GraduationCap, Landmark } from 'lucide-react';
 
 const eduData = [
     {
-        institution: 'University of Moratuwa',
-        period: 'Jun 2021 - Jun 2025',
+        institution: 'Sri Lanka Institute of Information Technology',
+        period: '2023 – Present',
         degree: 'B.Sc. (Hons) in Information Technology',
-        details: 'CGPA - 3.51 | L4S1 SGPA - 3.81 (Dean’s List)',
+        details: 'Reading – Final Year',
         icon: <GraduationCap size={28} />
     },
     {
-        institution: 'Richmond College, Galle',
-        period: 'Jun 2016 - Aug 2019',
-        degree: 'G.C.E Advanced Level Examination',
-        details: 'Physical Science stream. Grades: A B B.',
+        institution: 'St. Thomas College – Matale',
+        period: '2019 – 2021',
+        degree: 'G.C.E (A/L) – Engineering Technology',
+        details: '',
         icon: <Landmark size={28} />
     }
 ];
@@ -52,7 +52,7 @@ const Education = () => {
                         ))}
                     </div>
 
-                    {/* Right side: Animated Images */}
+                    {/* Right side: Tech Animation Video */}
                     <div className="flex-1 w-full flex items-center justify-center min-h-[400px] lg:mt-12">
                         <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
                             {/* Decorative Rotating Rings */}
@@ -67,43 +67,18 @@ const Education = () => {
                                 transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                             />
                             <motion.div
-                                className="absolute -inset-2 md:-inset-2 border-4 border-accent/10 rounded-full"
-                                animate={{ rotate: 180, scale: [1, 1.05, 1] }}
+                                className="absolute -inset-2 border-4 border-accent/10 rounded-full"
+                                animate={{ scale: [1, 1.05, 1] }}
                                 transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
                             />
 
-                            {/* Grad 1 Image */}
-                            <motion.img
-                                src="/uploads/grad1.jpg"
-                                alt="Graduation Moment 1"
+                            <video
+                                src="/uploads/A_cute_stylized_D_animated_b.mp4"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
                                 className="absolute inset-0 w-full h-full object-cover rounded-full shadow-2xl border-4 border-white dark:border-gray-800"
-                                animate={{
-                                    opacity: [1, 0, 1],
-                                    scale: [1, 0.85, 1],
-                                    rotate: [0, 5, 0]
-                                }}
-                                transition={{
-                                    duration: 8,
-                                    repeat: Infinity,
-                                    ease: "easeInOut"
-                                }}
-                            />
-
-                            {/* Grad 2 Image */}
-                            <motion.img
-                                src="/uploads/grad2.jpg"
-                                alt="Graduation Moment 2"
-                                className="absolute inset-0 w-full h-full object-cover rounded-full shadow-2xl border-4 border-white dark:border-gray-800"
-                                animate={{
-                                    opacity: [0, 1, 0],
-                                    scale: [0.85, 1, 0.85],
-                                    rotate: [0, -5, 0]
-                                }}
-                                transition={{
-                                    duration: 8,
-                                    repeat: Infinity,
-                                    ease: "easeInOut"
-                                }}
                             />
                         </div>
                     </div>

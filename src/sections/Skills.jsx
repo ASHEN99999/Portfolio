@@ -1,56 +1,44 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import SectionHeader from '../components/SectionHeader';
-import { Globe, PenTool, Layout, Database, Kanban, TestTube, Cpu, Cloud } from 'lucide-react';
+import { Globe, PenTool, Layout, Database, Kanban, TestTube, Cloud } from 'lucide-react';
 
 const skillsData = [
     {
-        title: 'Web Development',
-        desc: 'Experienced in ReactJS, HTML, CSS, Node.js, Spring Boot, Go and Bootstrap for building responsive websites.',
-        icon: <Globe size={40} className="text-primary" />,
-        color: 'from-blue-500/20 to-primary/20'
-    },
-    {
-        title: 'UI / UX Designing',
-        desc: 'Skilled in UI/UX design using tools like Figma to create amazing user interfaces.',
-        icon: <PenTool size={40} className="text-secondary" />,
-        color: 'from-purple-500/20 to-secondary/20'
-    },
-    {
-        title: 'Frontend Development',
-        desc: 'Proficient in HTML, CSS, JavaScript, ReactJS, Bootstrap and MUI for crafting beautiful, interactive frontends.',
+        title: 'Programming Languages',
+        desc: 'Proficient in Java, JavaScript, C, Python, and Angular for building diverse software solutions.',
         icon: <Layout size={40} className="text-pink-500" />,
         color: 'from-pink-500/20 to-rose-500/20'
     },
     {
-        title: 'Backend Development',
-        desc: 'Experienced with Java, Spring Boot, Go, Python for backend development and proficient in MySQL and MongoDB.',
+        title: 'Web Development',
+        desc: 'Experienced in React, Spring Boot, Bootstrap, HTML, CSS, Tailwind CSS, and Streamlit for building responsive web applications.',
+        icon: <Globe size={40} className="text-primary" />,
+        color: 'from-blue-500/20 to-primary/20'
+    },
+    {
+        title: 'Database Management',
+        desc: 'Skilled with MySQL, MongoDB, and Oracle for designing and managing relational and NoSQL database systems.',
         icon: <Database size={40} className="text-accent" />,
         color: 'from-green-500/20 to-accent/20'
     },
     {
-        title: 'Project Management',
-        desc: 'Familiar with Jira for team collaboration, and GitHub/Bitbucket for version control.',
-        icon: <Kanban size={40} className="text-orange-500" />,
-        color: 'from-orange-500/20 to-yellow-500/20'
+        title: 'DevOps & CI/CD',
+        desc: 'Hands-on experience with Docker, Jenkins, Git, Kafka, Jira, Postman, and Bitbucket in Agile environments.',
+        icon: <Cloud size={40} className="text-sky-500" />,
+        color: 'from-sky-500/20 to-cyan-500/20'
     },
     {
         title: 'Testing & Automation',
-        desc: 'Proficient in Postman, RestAssured, Serenity-BDD, Selenium, Cucumber for automated testing and API validation.',
+        desc: 'Proficient in Playwright for end-to-end automated testing and Postman for API validation and testing.',
         icon: <TestTube size={40} className="text-indigo-500" />,
         color: 'from-indigo-500/20 to-blue-500/20'
     },
     {
-        title: 'AI and R&D',
-        desc: 'Familiar with Python, RAG, Pipecat, Neo4j Graph Database, MCP, MCP UI, and Grafana for building intelligent systems and dashboards.',
-        icon: <Cpu size={40} className="text-teal-500" />,
-        color: 'from-teal-500/20 to-emerald-500/20'
-    },
-    {
-        title: 'DevOps & Cloud',
-        desc: 'Experienced with Docker, Kubernetes (K8s), Jenkins, Harbor, and AWS services (e.g., S3) for CI/CD and cloud infrastructure.',
-        icon: <Cloud size={40} className="text-sky-500" />,
-        color: 'from-sky-500/20 to-cyan-500/20'
+        title: 'UI/UX & Design',
+        desc: 'Skilled in Figma for designing intuitive user interfaces and delivering great user experiences.',
+        icon: <PenTool size={40} className="text-secondary" />,
+        color: 'from-purple-500/20 to-secondary/20'
     }
 ];
 
