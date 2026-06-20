@@ -15,18 +15,18 @@ const Contact = () => {
         setSubmitStatus(null);
 
         const templateParams = {
-            from_name: formData.name,
-            from_email: formData.email,
+            name: formData.name,
+            email: formData.email,
             phone: formData.phone,
             message: formData.message,
         };
 
         try {
             await emailjs.send(
-                'service_0t3ae0p',
-                'template_qpcjhvo',
+                'service_7x1e3v5',
+                'template_t3qjciu',
                 templateParams,
-                '6Ndrh18z39wQGfH17'
+                '-j-Y6hyFF8-8c1Lo8z'
             );
             setSubmitStatus('success');
             setFormData({ name: '', email: '', phone: '', message: '' });
