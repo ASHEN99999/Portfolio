@@ -26,7 +26,7 @@ const Contact = () => {
                 'service_7x1e3v5',
                 'template_t3qjciu',
                 templateParams,
-                '-j-Y6hyFF8-8c1Lo8z'
+                { publicKey: 'j-Y6hyFF8-8c1Lo8z' }
             );
             setSubmitStatus('success');
             setFormData({ name: '', email: '', phone: '', message: '' });
